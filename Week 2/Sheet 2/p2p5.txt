@@ -1,0 +1,5 @@
+A: nothing is output
+B: nothing is output
+C: when seg = animals[:y], all characters from index 0 to index (y-1) are printed
+D: when seg = animals[x:], all characters from index x to the end are printed
+E: when seg = animals[:], all characters are printed

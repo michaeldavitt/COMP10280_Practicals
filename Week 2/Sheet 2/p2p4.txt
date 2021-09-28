@@ -1,0 +1,12 @@
+Code:
+animal = "elephant"
+print(animal[0], animal[1], animal[2], animal[3], animal[4], animal[5], animal[6], animal[7])
+print(animal[7], animal[6], animal[5], animal[4], animal[3], animal[2], animal[1], animal[0])
+print(animal[-1])
+print(animal[8])
+
+Output:
+e l e p h a n t
+t n a h p e l e
+t
+IndexError: string index out of range
