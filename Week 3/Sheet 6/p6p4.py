@@ -4,22 +4,41 @@
 Pseudocode:
 
 Create a password variable
+Initialised a user password
 
-Create a counter variable
+Create a counter variable to track the number of password guesses
 Initialise counter variable = 0
-Create a variable that checks if the password has matched
-Initialise match variable = False
 
-Get a password from the user
-
-While the counter is less than 3 or match variable is false:
-    If user password is equal to stored password:
-        match variable is True
+While the user's password does not equal the stored password and the counter is less than 3:
+    Get password from user
     Increment counter
+    If the user's password is equal to the stored password:
+        print "You have successfully logged in"
+    
+    else:
+        print "Incorrect password"
+        Get the user to enter a different password
+    
 
-If match is True:
-    print "You have successfully logged in"
-
-else:
+if user password is not equal to stored password:
     print "You have been denied access"
 """
+
+stored_pass = "password"
+user_pass = ""
+
+guesses = 0
+
+while (user_pass != stored_pass) and guesses < 3:
+    user_pass = input("Please type in a password: ")
+    guesses += 1
+    if user_pass == stored_pass:
+        print("You have successfully logged in")
+
+    else:
+        print("Incorrect password")
+
+if user_pass != stored_pass:
+    print("You have been denied access")
+
+print("Finished")

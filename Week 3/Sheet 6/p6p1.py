@@ -16,9 +16,9 @@ If the sum is greater than 100:
 Print "Finished"
 """
 
-num_1 = int(input("Please enter a number: "))
+num_1 = float(input("Please enter a number: "))
 print("You have entered", num_1)
-num_2 = int(input("Please enter another number: "))
+num_2 = float(input("Please enter another number: "))
 print("You have entered", num_2)
 
 num_sum = num_1 + num_2
