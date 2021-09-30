@@ -3,7 +3,7 @@
 user_num = int(input("Please type an integer: "))
 
 if user_num == 0:
-    print(user_num, "is 0")
+    print(user_num, "is equal to 0")
 
 elif 0 < user_num <= 20:
     print(user_num, "is greater than 0 and less than or equal to 20")

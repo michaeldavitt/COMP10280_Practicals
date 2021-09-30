@@ -3,12 +3,12 @@
 """
 Pseudocode:
 
-Ask user for first number
+Prompt user for first number
 Read first number
-Ask user for second number
+Prompt user for second number
 Read second number
 
-Get sum of two numbers
+Sum the two numbers
 
 If the sum is greater than 100:
     print "This is a big number"
@@ -18,6 +18,7 @@ Print "Finished"
 
 num_1 = float(input("Please enter a number: "))
 print("You have entered", num_1)
+
 num_2 = float(input("Please enter another number: "))
 print("You have entered", num_2)
 

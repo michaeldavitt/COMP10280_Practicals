@@ -1,8 +1,7 @@
-# p4-5p3 - tax calculator
+# p4-5p3 - Tax calculator
 
 # define initial variables
 gross_income = float(input("Gross Income: € "))
-print("You input: €", gross_income)
 low_tax_rate = 0.23
 high_tax_rate = 0.41
 tax_band = 0.6

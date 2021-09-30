@@ -1,4 +1,2 @@
 Questions for Week 3 Programming before submitting:
 
-1: Can you use float("-inf") to represent a very low number
-2: In PS7 did you mean natural numbers instead of integers?

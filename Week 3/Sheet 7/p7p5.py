@@ -21,7 +21,7 @@ while counter is less than or equal to the limit:
 print total
 """
 
-lim = 5000
+lim = 10000
 total = 0
 counter = 1
 
@@ -32,3 +32,5 @@ while counter <= lim:
     counter += 1
 
 print(total)
+
+print("Finished")

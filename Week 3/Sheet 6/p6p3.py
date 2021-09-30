@@ -5,14 +5,14 @@ Pseudocode:
 
 Get a name from the user
 
-If name is my name:
+If the name is my name:
     print "That's a cool name"
 
-Else if name is "Mickey Mouse" or "Spongebob Squarepants":
-    print "I don't think that's you're name"
+Else if the name is "Mickey Mouse" or "Spongebob Squarepants":
+    print "I don't think that is your name"
 
 Else:
-    You have a nice name
+    print "You have a nice name"
 
 """
 

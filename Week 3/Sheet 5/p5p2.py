@@ -6,6 +6,6 @@ if user_num >= 0:
     print(user_num, "is non-negative")
 
 else:
-    print(user_num, "is not non-negative")
+    print(user_num, "is negative")
 
 print("Finished")

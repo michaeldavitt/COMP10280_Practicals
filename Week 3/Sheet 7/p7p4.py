@@ -27,4 +27,6 @@ while counter <= lim:
     total += counter
     counter += 1
 
-print(total)
+print("The sum of the first 5000 integers is:", total)
+
+print("Finished")

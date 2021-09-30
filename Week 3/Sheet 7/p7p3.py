@@ -10,8 +10,7 @@ create a variable to count the number of iterations of the while loop
 set the counter to 1
 
 while the counter is less than or equal to the limit:
-    print(counter)
-    print(counter squared)
+    print the counter and the square of the counter
     increment counter
 
 """
@@ -20,7 +19,7 @@ lim = 50
 counter = 1
 
 while counter <= lim:
-    print(counter)
-    print(counter ** 2)
+    print("integer =", counter, "; square of integer =", counter ** 2)
     counter += 1
 
+print("Finished")

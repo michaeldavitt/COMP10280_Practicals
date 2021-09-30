@@ -1,7 +1,8 @@
 # p7p2 - Leap Year Program (Wikipedia algorithm)
 
 """
-Pseudocode:
+Pseudocode (from Wikipedia):
+
 Prompt the user for a year
 Read the year
 
@@ -11,7 +12,7 @@ else if (year is not divisible by 400) then (it is a common year)
 else (it is a leap year)
 """
 
-year = int(input("Please enter a year"))
+year = int(input("Please enter a year: "))
 print("Year entered:", year)
 
 if year % 4 != 0:
@@ -25,3 +26,5 @@ elif year % 400 != 0:
 
 else:
     print(year, "is a leap year")
+
+print("Finished")

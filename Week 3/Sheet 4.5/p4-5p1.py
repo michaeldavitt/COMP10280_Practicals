@@ -1,4 +1,4 @@
-# p4-5p1 - Exchange Rate Program (exchange rate: €1 = $1.17 as at 28/09/2021)
+# p4-5p1 - Euro to Dollars Exchange Rate Program (exchange rate: €1 = $1.17 as at 28/09/2021)
 
 exchange_rate = 1.17
 
@@ -10,4 +10,6 @@ if user_currency >= 0:
     print("€", user_currency, " = $", new_currency)
 
 else:
-    print("Amount must be >= 0")
+    print("Amount must be >= 0. Please try again.")
+
+print("Finished")

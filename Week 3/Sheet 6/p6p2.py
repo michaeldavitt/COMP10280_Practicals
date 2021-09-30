@@ -3,20 +3,16 @@
 """
 Pseudocode:
 
-Ask for first number
-Read first number
-Ask for second number
-Read second number
-Ask for third number
-Read third number
+Prompt user for the first number
+Prompt user for the second number
+Prompt user for the third number
 
 If all numbers are even:
     print "None of these numbers are odd"
 
 Else:
     create a variable that keeps track of the largest odd number
-    initialise this variable with the lowest possible value so that all of the 3 
-    numbers will be greater than it at first
+    set this variable to 0
 
     if the first number is odd:
         largest odd number variable becomes the first number
@@ -40,15 +36,17 @@ if num_1 % 2 == 0 and num_2 % 2 == 0 and num_3 % 2 == 0:
     print("None of the three numbers are odd")
 
 else:
-    max_odd = float("-inf")
+    max_odd = 0
 
     if num_1 % 2 != 0:
         max_odd = num_1
 
-    if num_2 % 2 != 0 and num_2 > max_odd:
+    if num_2 % 2 != 0 and (num_2 > max_odd or max_odd == 0):
         max_odd = num_2
 
-    if num_3 % 2 != 0 and num_3 > max_odd:
+    if num_3 % 2 != 0 and (num_3 > max_odd or max_odd == 0):
         max_odd = num_3
 
     print(max_odd, "is the largest odd number")
+
+print("Finished")
