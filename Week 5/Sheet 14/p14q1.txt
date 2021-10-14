@@ -1,0 +1,14 @@
+Low input test (x=100): 
+Recursive program time: 0.000997304916381836 seconds
+Iterative program time: 0.0 seconds
+
+Medium input test (x=500):
+Recursive program time: 0.0039920806884765625 seconds
+Iterative program time: 0.002991199493408203 seconds
+
+High input test (x=900):
+Recursive program time: 0.005983829498291016 seconds
+Iterative program time: 0.004985332489013672 seconds
+
+In all tests, the iterative program was significantly faster than the recursive program when 
+it came to computing the factorial of x.

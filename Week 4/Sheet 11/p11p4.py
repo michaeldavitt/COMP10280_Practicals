@@ -13,7 +13,7 @@ for each number i in the range 0 to n-1:
     for each number in the range 1 to i:
         multiply the n total by the number
 
-    calculate the Catalan numbers using (2i)! / ( i! ** 2 * (i-1)! )
+    calculate the catalan number using (2i)! / ( i! ** 2 * (i+1) )
     print out the catalan number
 
 terminate the program

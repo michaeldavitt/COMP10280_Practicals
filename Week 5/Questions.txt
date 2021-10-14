@@ -1,0 +1,3 @@
+Questions for demonstrators: Week 5:
+1: Do I need to include the number of guesses part of the algorithm in PS12 part 3
+2: For the non-prime numbers, is 3 * 6 and 6 * 3 considered different factor pairs.

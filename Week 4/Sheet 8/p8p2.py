@@ -22,6 +22,8 @@ Terminate the program
 user_num = int(input("Please enter a number: "))
 print("You entered", user_num)
 print("Here is a multiplication table for the number", user_num, "from 1 to", user_num)
+print()
+print("--------------------------------------")
 
 i = 1
 
@@ -29,10 +31,11 @@ while i <= user_num:
     j = 1
 
     while j <= user_num:
-        print(i * j, "\t", end="")
+        print("|", i * j, "\t", end="")
         j += 1
 
     print()
+    print("--------------------------------------")
 
     i+= 1
 
