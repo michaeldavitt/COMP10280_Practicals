@@ -1,8 +1,5 @@
 # Taken verbatum from the notes (Lecture 15 page 9)
 
-# Program to print out the largest of two numbers entered by the user
-# Uses two functions: max and print_max
-
 """
 Pseudo Code:
 Define a print max function which takes no formal parameters:
@@ -24,7 +21,9 @@ Terminate the program
 
 def print_max():
     """Function that prints out the largest of two numbers
-    Uses the function max to find the largest"""
+    
+    Uses the function max to find the largest
+    """
 
     def max(a, b):
         """Function that returns the largest of its two arguments"""

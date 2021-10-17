@@ -1,8 +1,5 @@
 # Taken verbatum from the notes (Lecture 15 page 4)
 
-# Program to print out the largest of two numbers entered by the user
-# Uses a function max
-
 """
 Pseudo Code:
 Define the function max taking formal parameters a and b:
@@ -12,8 +9,8 @@ Define the function max taking formal parameters a and b:
     else:
         return b
 
-Prompt the user for two numbers
-Call the max function with the two user numbers as the actual parameters and assign the output to the variable "biggest"
+Prompt the user for two floating-point numbers
+Call the max function and assign the output to the variable "biggest". Actual parameters = the two user numbers
 print "The largest of the two numbers is: biggest"
 Terminate the program
 """
@@ -28,6 +25,7 @@ def max(a, b):
 # Prompt the user for two numbers
 number1 = float(input("Enter a number: "))
 number2 = float(input("Enter a number: "))
+
 biggest = max(number1, number2)
-print("The largest of", number1, "and", number2, "is", biggest)
+print("The largest of", number1, "and", number2, "is:", biggest)
 print("Finished!")

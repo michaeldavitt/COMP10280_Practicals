@@ -1,8 +1,8 @@
-A: When you write print(print_max()) instead of simply print_max(), you are attempting to print out the return value of the function print_max(), 
-which is None because the function does not return a value
+A: The function is called as normal, but after the function has finished executing, None is printed. When you write print(print_max()) instead of simply print_max(), you are 
+attempting to print out the return value of the function print_max(), which is None because the function does not return a value. 
 
-B: When you omit the brackets, the function call is not made. This is because when you type the function without the brackets, you are not making a function call, you are just
-typing out the function object.
+B: Nothing is printed and the program terminates immediately. When you omit the brackets, the function call is not made. This is because when you type the function without the brackets, you are not making a function call, you are just
+referencing the function object. 
 
-C: When you print the function object, it displays some information about the object. It displays the type (function), the name of the function, and the function's 
-location in memory
+C: The function is not called. When you print the function object, it displays some information about the object. It displays the type (function), the name of the function (print_max), and the function's 
+address in the memory. 

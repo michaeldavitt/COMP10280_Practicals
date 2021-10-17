@@ -1,14 +1,17 @@
 """
 Pseudocode:
-Rules of Fibonnaci: Series = 0 if N=0, Series = 1 if N=1, Series = Fib(N-1) + Fib(N-2) if N > 1
+Rules of Fibonnaci: 
+Series = nothing if N=0 
+Series = 0 if N=1 
+Series = Fib(N-1) + Fib(N-2) if N > 1
 
 Define a function fibonacci taking one formal parameter x, which is assumed to be non-negative:
     Initialise two variables, representing fib(n-2) and fib(n-1) to be 0 and 1 respectively
 
-    if x is 0 then:
+    if x is equal to 0 then:
         Print "Series:"
 
-    else if x is 1 then:
+    else if x is equal to 1 then:
         Print "Series: fib(n-2)"
 
     else:
@@ -16,10 +19,13 @@ Define a function fibonacci taking one formal parameter x, which is assumed to b
 
         initialise position variable = 3
 
-        while position is less than or equal to x:
-            Compute the sum of fib(n-2) and fib(n-1) and add the result to the printed series
-            Store the value of the fib calculation in f(n-1) and the value of f(n-1) in f(n-2)
-            Increment the position variable 
+        while position is less than or equal to x (loop will be skipped when x < 3) do the following:
+            Assign f(n-1) + f(n-2) to the variable f(n-1) and assign f(n-1) to the variable f(n-2) using multiple assignment
+            Print f(n-1)
+            Increment the position variable
+
+    print a new line
+
 
 
 Prompt the user for an integer
@@ -29,12 +35,16 @@ if the user integer is less than 0:
     print an error message
 
 else:
-    call the fibonnaci function, using user integer as the actual parameter.
+    call the fibonnaci function, actual parameter = user integer.
 
 Terminate the program
 """
 
 def fibonnaci(x):
+    """For an argument x, the function calculates x number of terms of the fibonnaci sequence
+    
+    The argument x is assumed to be non-negative
+    """
     n_2, n_1 = 0, 1
 
     if x == 0:
@@ -55,7 +65,8 @@ def fibonnaci(x):
 
     print()
 
-        
+
+
 user_num = int(input("Please enter an integer greater than or equal to 0: "))
 print("You have entered:", user_num)
 

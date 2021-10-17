@@ -1,8 +1,10 @@
+# Note: The use of the time module is to answer PS14 Q1
+
 """
 Pseudo Code:
 Define factorial function taking one formal parameter x, assumed to be a non-negative integer:
 
-    print "Current value of x =" followed by the current value of x
+    print "Current value of x:" followed by the current value of x
 
     if x = 0 then:
         return 1
@@ -19,10 +21,12 @@ if user number is less than 0 then:
     print an error message
 
 else:
-    call the function factorial with actual argument = user number
+    call the function factorial with actual argument = user number and print the result
 
 Terminate the program
 """
+
+
 import time
 
 def factorial(x):
@@ -32,7 +36,7 @@ def factorial(x):
     Uses a recursive definition
     """
 
-    # print("Current value of x:", x)
+    print("Current value of x:", x)
 
     if x == 0:
         return 1

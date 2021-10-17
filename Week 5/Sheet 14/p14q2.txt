@@ -1,7 +1,10 @@
-The recursive function gave an error once the number reached 998 ("maximum recursion depth exceeded
-in comparison)
+The recursive function gave an error once the number reached 995 ("maximum recursion depth exceeded
+in comparison). This is to prevent stack overflow. When a program gets loaded into memory, there is a block of memory set aside to store variables from stack frames.
+When too many stack frames are created, the number of variables stored in the stack section grows larger than what was allocated, resulting in stack overflow.
 
 The non-recursive function was able to take larger inputs. 
 Time taken when x = 10000: 0.1484520435333252 seconds
 Time taken when x = 50000: 3.0707905292510986 seconds
 Time taken when x = 100000: 19.672449588775635 seconds
+
+The time taken increased as x increased. Note that there was no error when x went past 995

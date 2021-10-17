@@ -16,10 +16,17 @@ while the user integer is greater than or equal to 1:
     for each number i in the range 0 to user integer - 1:
         print the result of the call to the recursive function with argument i + 1
 
+    Prompt the user for an integer
+    
 Terminate the program
 """
 
 def next_series_fn(n):
+    """Calculates 1 if the argument n = 1 and f(n-1) + 2**(n-1) when the argument n > 1
+    
+    Assumes that the argument n is a positive integer
+    Uses a recursive definition
+    """
     print("Current number:", n)
 
     if n == 1:
@@ -27,6 +34,8 @@ def next_series_fn(n):
 
     else:
         return next_series_fn(n - 1) + 2 ** (n - 1)
+
+
 
 user_num = int(input("Please enter an integer >= 1 (enter a non-positive number to exit): "))
 
