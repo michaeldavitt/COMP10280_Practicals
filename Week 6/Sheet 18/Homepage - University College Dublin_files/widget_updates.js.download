@@ -1,0 +1,21 @@
+function ShowUpdatesOptionsDialog( doReload ) {
+
+	var WidgetUpdatesOptionsCallback = function( response ) {
+		response.GetDialog().Close();
+		if( doReload && response.GetType() == D2L.Dialog.ResponseType.Positive ) {
+			Nav.Reload();
+		}
+	};
+
+	var dialog = new D2L.Dialog( 'updatesOptionsDialog', WidgetUpdatesOptionsCallback );
+	
+	dialog.SetTitle( new D2L.Language.Term( 'Homepages.widgets\\updates\\updates_display_options.titDisplayOptions' ) );
+	dialog.SetSize( 550, 470 );
+	
+	dialog.AddButton( D2L.Dialog.ButtonType.Cancel );
+	dialog.AddButton( D2L.Dialog.ButtonType.Save );
+	
+	dialog.SetSrc( '/d2l/lms/widgets/updates/updates_display_options.d2l', 'SrcCallback' );
+	
+	dialog.Open();
+}

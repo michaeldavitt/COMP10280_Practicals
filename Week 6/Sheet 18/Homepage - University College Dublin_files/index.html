@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://brightspace.ucd.ie/shared/custom_widgets/lcs_widgets/widgets/news/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Announcements</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap CDN CSS -->
+   <link rel="stylesheet" href="./bootstrap.min.css">
+   <!-- Widget styles -->
+   <link rel="stylesheet" href="./cs_widget_news.min.css">
+<script>function lti_launch( vars, target ) {
+						var query = '';
+						var new_tab = false;
+
+						for(var key in vars) {
+							if(query.length == 0) {
+								query += '?' + key + '=' + encodeURIComponent(vars[key]);
+							}
+							else {
+								query += '&' + key + '=' + encodeURIComponent(vars[key]);
+							}
+						}
+
+						var url = '/d2l/customization/pearsonlti/6606/Launch' + query;(target == '_blank') ? window.open( url, '_blank' ) : location.replace( url );}</script><script src="./MathML.js.download"></script><script>document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.7.4/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe','130',true); });</script><script>window.addEventListener('message', function(event) { 
+					if( !event.data ) {
+						return;
+					}
+
+					var params;
+					try {
+						params = JSON.parse( event.data );
+					}
+					catch {
+						return;
+					}
+					if( !params.subject || params.subject !== 'lti.frameResize' ) {
+						return;
+					}
+
+					const MAX_FRAME_HEIGHT = 10000
+					if( !params.height || params.height < 1 || params.height > MAX_FRAME_HEIGHT ) {
+						console.warn( 'Invalid height value received, aborting' );
+						return;
+					}
+					var el = document.getElementsByTagName( 'iframe' );
+					for ( var i=0; i < el.length; i++ ) {
+						if( el[i].contentWindow === event.source ) {
+							el[i].style.height = params.height + 'px';
+							el[i].style.width = '100%';
+							console.info( 'Setting iFrame height to ' + params.height );
+							console.info( 'Setting iFrame width to 100%' );
+						}
+					}
+				});</script></head>
+
+<body>
+   <div class="container-fluid">
+      <div class="row news-title">
+         <div class="col-sm-12">
+            <h2 class="widget-title">Announcements</h2>
+         </div>
+      </div>
+      <div class="row news-controls news-control-top" style="display: none;">
+         <div class="col-sm-12">
+            <a class="news-control-link news-control-create" href="https://brightspace.ucd.ie/d2l/lms/news/newedit.d2l?ou=6606&amp;global=0" target="_top" title="Create Announcement">
+               <span><img src="./Shared.Main.actAdd.png" alt="">Create Announcement</span>
+            </a>
+         </div>
+         <div class="col-sm-12">
+            <a class="news-control-link news-control-reorder" href="https://brightspace.ucd.ie/d2l/lms/news/reorder.d2l?ou=6606" target="_top" title="Reorder Announcements" style="display: none;">
+               <span><img src="./Shared.Main.actReorder.png" alt="">Reorder Announcements</span>
+            </a>
+         </div>
+      </div>
+      <div class="row news-feed">
+         <div class="col-sm-12">
+            <ul class="news-feed-list"><li data-news-id="184624"><div class="row news-list-item" id="news-item-0"><div class="col-xs-3 hidden-xxs-custom"><img src="./news-img-default-shared.jpeg" class="news-post-image"></div><div class="col-xs-9 col-xxs-12-custom"><a class="news-control-item-dismiss" href="javascript:;" title="Dismiss COVID 19 Symptoms" data-attr="184624" data-ouid="6606"><img src="./News.Main.actHide.svg" class="dismiss-img"></a><h2 tabindex="0"><a class="news-link" href="https://brightspace.ucd.ie/d2l/le/news/6606/184624/view" target="_top">COVID 19 Symptoms</a></h2><p class="news-date" tabindex="0">Posted Wednesday, September 29th, 2021 at 12:33 PM</p><p class="pbody">If you have any symptoms of COVID 19 no matter how mild, please do not come onto campus for any reason. Restrict your movements immediately and get tested - even if you are fully vaccinated. Remember, if you attend class or campus with symptoms, vulnerable people may acquire a<span class="more-ellipses">... </span><a target="_blank" class="read-more-post" href="https://brightspace.ucd.ie/d2l/le/news/6606/184624/view" title="Read More of COVID 19 Symptoms news post" tabindex="0">Read More</a></p></div></div></li><li data-news-id="181627"><div class="row news-list-item" id="news-item-1"><div class="col-xs-3 hidden-xxs-custom"><img src="./news-img-default-shared.jpeg" class="news-post-image"></div><div class="col-xs-9 col-xxs-12-custom"><a class="news-control-item-dismiss" href="javascript:;" title="Dismiss Face Coverings" data-attr="181627" data-ouid="6606"><img src="./News.Main.actHide.svg" class="dismiss-img"></a><h2 tabindex="0"><a class="news-link" href="https://brightspace.ucd.ie/d2l/le/news/6606/181627/view" target="_top">Face Coverings</a></h2><p class="news-date" tabindex="0">Posted Monday, September 13th, 2021 at 11:19 AM</p><p class="pbody">The University requires all persons to wear face coverings, preferably in the form of a mask, when indoors in University buildings in most scenarios. Face coverings must be worn during teaching activities / when in class, when moving through buildings, in corridors and on<span class="more-ellipses">... </span><a target="_blank" class="read-more-post" href="https://brightspace.ucd.ie/d2l/le/news/6606/181627/view" title="Read More of Face Coverings news post" tabindex="0">Read More</a></p></div></div></li></ul>
+         </div>
+      </div>
+      <div class="row news-controls news-control-bot" style="display: block;">
+         <div class="col-sm-12">
+            <a class="news-control-view-all" href="https://brightspace.ucd.ie/d2l/lms/news/main.d2l?ou=6606" target="_top"><span>Show All Announcements</span></a>
+         </div>
+      </div>
+   </div>
+   <!-- jQuery CDN w/ local fallback (Bootstrap Dependency) -->
+   <script src="./jquery.min.js(1).download"></script>
+   <script>
+   	window.jQuery || document.write('<script src="../../assets/third_party/jquery/jquery-1.11.3.min.js"><\/script>')
+   </script>
+   <!-- Bootstrap CDN JS -->
+   <script src="./bootstrap.min.js.download"></script>
+   <!-- Third-party scripts -->
+   <script src="./moment.min.js.download"></script>
+   <!-- Valence scripts -->   
+   <script src="./libval.min.js.download"></script>
+   <!-- Widget scripts -->
+   <script src="./cs_widget_news.min.js.download"></script>
+
+
+
+</body></html>

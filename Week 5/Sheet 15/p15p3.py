@@ -30,7 +30,7 @@ def last_series_fn(n):
     Assumes that the argument n is a non-negative integer
     Uses a recursive definition
     """
-    # print("Current number:", n)
+    print("Current number:", n)
     
     if n == 0:
         return 13
